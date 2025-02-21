@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes slide {
+          0% { transform: translateX(0); }
+          50% { transform: translateX(20px); }
+          100% { transform: translateX(0); }
+        }
+        .animate-slide {
+          animation: slide 2s infinite ease-in-out;
+        }
+      </style>
+</head>
+<body data-theme="dark" class="min-h-screen bg-gray-900 text-white">
+    <header class="flex justify-between items-center p-4 bg-gray-800" data-aos="fade-down">
+      <h1 class="text-2xl font-bold">Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li>
+            
+            <a href="https://www.linkedin.com/in/marlon-vargas-917618223/" class="hover:text-blue-400 transition-colors">
+                <i class="fab fa-linkedin"></i>LinkedIn</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-blue-400 transition-colors">Projetos</a>
+          </li>
+          <li>
+            
+            <a href="https://github.com/pwaved" class="hover:text-blue-400 transition-colors"><i class="fab fa-github"></i>GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex flex-col">
+      <section class="flex flex-col justify-center items-center h-screen px-4" data-aos="fade-up">
+        <div class="text-center">
+          <h2 class="text-4xl md:text-6xl font-bold mb-4 animate-pulse">
+            Olá, eu sou o <span class="text-blue-500">Marlon</span>
+          </h2>
+          <p class="text-lg md:text-2xl animate-pulse">Desenvolvedor Front-end</p>
+        </div>
+        <body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+            <div class="text-center">
+              <h2 class="text-3xl mb-6 animate-pulse" data-aos="fade-up">Minhas Tecnologias</h2>
+              <div class="flex items-center justify-center space-x-8">
+                
+                <div class="flex flex-col items-center animate-slide" style="animation-delay: 0s;" data-aos="fade-up">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16">
+                  <span class="mt-2">HTML5</span>
+                </div>
+               
+                <div class="flex flex-col items-center animate-slide" style="animation-delay: 0.2s;" data-aos="fade-up">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16">
+                  <span class="mt-2">CSS3</span>
+                </div>
+                
+                <div class="flex flex-col items-center animate-slide" style="animation-delay: 0.4s;" data-aos="fade-up">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16">
+                  <span class="mt-2">JavaScript</span>
+                </div>
+                
+                <div class="flex flex-col items-center animate-slide" style="animation-delay: 0.6s;" data-aos="fade-up">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="w-16 h-16">
+                  <span class="mt-2">Tailwind</span>
+                </div>
+              </div>
+            </div>
+      </section>
+      <section id="sobre" class="py-16 bg-gray-800 bg-opacity-75" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+          <h2 class="text-center text-4xl md:text-5xl font-bold mb-8" data-aos="fade-left">Sobre Mim</h2>
+          <div class="max-w-3xl mx-auto text-center">
+            <p class="mb-4">
+              Sou Marlon, um desenvolvedor front-end apaixonado por criar interfaces dinâmicas, minimalistas, bonitas e responsivas. Com experiência em HTML, CSS, TailWind e JavaScript busco sempre melhorar a experiência do usuário e inovar em cada projeto.
+            </p>
+            <p>
+              Minha jornada no desenvolvimento começou com a faculdade. Estou cursando o segundo semestre de Análise e Desenvolvimento de Sistemas, atualmente estou focado em aprimorar minhas habilidades, aprender novas linguagens e frameworks/librarys além de construir projetos pessoais.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="py-16 bg-gray-800" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+          <h2 class="text-center text-4xl md:text-5xl font-bold mb-8" data-aos="fade-left">Projetos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-2xl font-semibold mb-2">Projeto 1</h3>
+              <p class="text-sm">Descrição breve do projeto 1.</p>
+            </div>
+            
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-2xl font-semibold mb-2">Projeto 2</h3>
+              <p class="text-sm">Descrição breve do projeto 2.</p>
+            </div>
+       
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="text-2xl font-semibold mb-2">Projeto 3</h3>
+              <p class="text-sm">Descrição breve do projeto 3.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+
+    <footer id="contact" class="flex flex-col items-center justify-center h-24 bg-gray-800 text-sm md:text-base" >
+      <p>&copy;Marlon 2025</p>
+    </footer>
+  
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+    </script>
+  </body>
+  </html>
